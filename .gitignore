@@ -13,6 +13,7 @@ venv/
 # PyTorch
 *.pt
 *.pth
+*.ckpt
 
 # Datasets / caches HF
 .cache/
