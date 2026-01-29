@@ -6,6 +6,11 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
+def set_seed(seed=42):
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+
+
 @dataclass
 class GPT2Config:
     vocab_size: int = 50257
